@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  airflow-webserver:
+    environment:
+      AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+      #AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: sqlite://///Users/ccc/Desktop/HW2/hw2.db
+
+  airflow-scheduler:
+    environment:
+      AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+      #AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: sqlite://///Users/ccc/Desktop/HW2/hw2.db
+
+
+  airflow-worker:
+    environment:
+      AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+      #AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: sqlite://///Users/ccc/Desktop/HW2/hw2.db
